@@ -1,0 +1,40 @@
+#05.02.2025 Bladyslava Bilokha
+
+import tkinter as tk
+def main():
+    aken = tk.Tk()
+    aken.geometry("300x300")
+
+    def kuva_sisestus():
+     tekst1 = sisestus1.get()
+     tekst2 = sisestus2.get()
+     vastus = tk.Label(aken,text=f"Siia tuleb vastus" {tekst1})
+     vastus.pack()
+
+
+    frame = tk.Frame(aken)
+    frame.pack(pady=5, padx=5)
+    frame2 = tk.Frame(aken)
+    frame2.pack(pady=5, padx=5)
+
+# Loo silt ja paiguta see raami
+    label = tk.Label(frame, text="Lenusumma (€)").pack(side='left')
+    sisestus1 = tk.Entry(frame)
+    sisestus1.pack(side='left',fill="y")
+
+    label2 = tk.Label(frame2, text="Aastane intressimäär (%)").pack(side='left')
+    sisestus2 = tk.Entry(frame2)
+    sisestus1.pack(side='left',fill="x",expand="true")
+
+    label.pack(side='left')
+
+    label2.pack(side='left')
+
+# Loo sisestusväli ja paiguta see raami
+    entry = tk.Entry(frame)
+    entry2 = tk.Entry(frame2)
+    entry.pack(side='left')
+    entry2.pack(side='left')
+
+
+    aken.mainloop()

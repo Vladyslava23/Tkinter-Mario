@@ -32,7 +32,6 @@ nimi.grid(row=1, column=2, padx=padx, pady=pady, sticky="nsew")
 nimi = tk.Button(aken, text="Kaal", font=font)
 nimi.grid(row=1, column=2, padx=padx, pady=pady, sticky="nsew")
 
-
 nupp_13 = tk.Button(aken, text="Nupp 1,3", font=font)
 nupp_13.grid(row=1, column=3, padx=padx, pady=pady, sticky="nsew")
 
